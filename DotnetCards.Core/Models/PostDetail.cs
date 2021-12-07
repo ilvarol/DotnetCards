@@ -1,12 +1,10 @@
-﻿namespace SimpleDotnet.Core.Models
+﻿namespace DotnetCards.Core.Models
 {
     public class PostDetail
     {
-        public int PostDetailId { get; set; }
+        public int Id { get; set; }
         public int PostID { get; set; }
-        public int PostText { get; set; }
-
-        //Note: Adding public virtual for EF
+        public string PostText { get; set; }
         public virtual Post Post { get; set; }
     }
 }

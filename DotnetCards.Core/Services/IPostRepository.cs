@@ -1,7 +1,8 @@
-﻿using SimpleDotnet.Core.Models;
+﻿using DotnetCards.Core.Models;
 using System.Threading.Tasks;
 
-namespace SimpleDotnet.Core.Repositories
+
+namespace DotnetCards.Core.Repositories
 {
 	interface IPostService: IService<Post> 
 	{

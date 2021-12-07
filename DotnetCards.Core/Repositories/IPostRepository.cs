@@ -1,9 +1,9 @@
-﻿using SimpleDotnet.Core.Models;
+﻿using DotnetCards.Core.Models;
 using System.Threading.Tasks;
 
-namespace SimpleDotnet.Core.Repositories
+namespace DotnetCards.Core.Repositories
 {
-	interface IPostRepository: IRepository<Post> 
+	public interface IPostRepository
 	{
 		Task<Post> GetWithPostDetailsByIdAsync(int postId);
 	}

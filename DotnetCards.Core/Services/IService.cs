@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace SimpleDotnet.Core.Repositories
+namespace DotnetCards.Core.Repositories
 {
 	interface IService<TEntity> where TEntity : class
 	{
@@ -16,7 +16,5 @@ namespace SimpleDotnet.Core.Repositories
 		void Remove(TEntity entity);
 		Task RemoveRangeAsync(IEnumerable<TEntity> entities);
 		TEntity Update(TEntity entity);
-
-		//Note: If we have method not related to Entity it can be here
 	}
 }

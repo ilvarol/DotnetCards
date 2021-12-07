@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetCards.API", "DotnetCa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetCards.Core", "DotnetCards.Core\DotnetCards.Core.csproj", "{9420A69A-70B2-4011-9EBA-3B1A5487FABA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCards.Data", "DotnetCards.Data\DotnetCards.Data.csproj", "{B23B8ECB-19EF-425D-83F6-954E416334B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetCards.Data", "DotnetCards.Data\DotnetCards.Data.csproj", "{B23B8ECB-19EF-425D-83F6-954E416334B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

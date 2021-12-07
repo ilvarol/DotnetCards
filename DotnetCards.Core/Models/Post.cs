@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SimpleDotnet.Core.Models
+namespace DotnetCards.Core.Models
 {
     public class Post
     {
@@ -14,8 +14,6 @@ namespace SimpleDotnet.Core.Models
 
         public virtual Post Parent { get; set; }
         public virtual ICollection<Post> Children { get; set; }
-
-        //Note: Adding this collection property for EF
-        public ICollection<PostDetail> PostDetails { get; set; }
+        public virtual ICollection<PostDetail> PostDetails { get; set; }
     }
 }
