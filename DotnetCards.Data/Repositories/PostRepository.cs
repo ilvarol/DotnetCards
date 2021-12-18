@@ -13,9 +13,13 @@ namespace DotnetCards.Data.Repositories
         {
         }
 
-        public async Task<Post> GetWithPostDetailsByIdAsync(int postId)
+        public async Task<Post> GetWithNavigationPropertiesByIdAsync(int postId)
         {
-            return await AppDbContext.Posts.Include(x => x.Parent).SingleOrDefaultAsync(x => x.Id == postId);
+            return await 
+                AppDbContext.Posts
+                .Include(x => x.Parent)
+                .Include(x => x.Children)
+                .SingleOrDefaultAsync(x => x.Id == postId);
         }
     }
 }

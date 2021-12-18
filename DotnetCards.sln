@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetCards.Core", "DotnetC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetCards.Data", "DotnetCards.Data\DotnetCards.Data.csproj", "{B23B8ECB-19EF-425D-83F6-954E416334B8}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnetcards.Service", "dotnetcards.service\Dotnetcards.Service.csproj", "{4E4156AB-1540-42FF-A207-1B262C8CC58B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B23B8ECB-19EF-425D-83F6-954E416334B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B23B8ECB-19EF-425D-83F6-954E416334B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B23B8ECB-19EF-425D-83F6-954E416334B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E4156AB-1540-42FF-A207-1B262C8CC58B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4156AB-1540-42FF-A207-1B262C8CC58B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4156AB-1540-42FF-A207-1B262C8CC58B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4156AB-1540-42FF-A207-1B262C8CC58B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

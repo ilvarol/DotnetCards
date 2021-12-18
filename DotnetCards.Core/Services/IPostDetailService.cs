@@ -1,9 +1,9 @@
 ﻿using DotnetCards.Core.Models;
 using System.Threading.Tasks;
 
-namespace DotnetCards.Core.Repositories
+namespace DotnetCards.Core.Services
 {
-	public interface IPostDetailRepository : IRepository<PostDetail>
+	public interface IPostDetailService : IService<PostDetail>
 	{
 		Task<PostDetail> GetWithPostByIdAsync(int postDetailId);
 	}

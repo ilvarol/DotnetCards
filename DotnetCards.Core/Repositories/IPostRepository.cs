@@ -3,8 +3,8 @@ using System.Threading.Tasks;
 
 namespace DotnetCards.Core.Repositories
 {
-	public interface IPostRepository
+	public interface IPostRepository : IRepository<Post>
 	{
-		Task<Post> GetWithPostDetailsByIdAsync(int postId);
+		Task<Post> GetWithNavigationPropertiesByIdAsync(int postId);
 	}
 }
