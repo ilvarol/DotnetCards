@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DotnetCards.Data\DotnetCards.Data.csproj" />
+    <ProjectReference Include="..\DotnetCards.Service\Dotnetcards.Service.csproj" />
   </ItemGroup>
 
 

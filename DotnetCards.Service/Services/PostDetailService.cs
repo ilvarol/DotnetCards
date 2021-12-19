@@ -7,9 +7,9 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace dotnetcards.service.Services
+namespace DotnetCards.Service.Services
 {
-    class PostDetailService : Service<PostDetail>, IPostDetailService
+    public class PostDetailService : Service<PostDetail>, IPostDetailService
     {
         public PostDetailService(IUnitOfWork unitOfWork, IRepository<PostDetail> repository) : base(unitOfWork, repository)
         {

@@ -4,9 +4,9 @@ using DotnetCards.Core.Services;
 using DotnetCards.Core.UnitOfWorks;
 using System.Threading.Tasks;
 
-namespace dotnetcards.service.Services
+namespace DotnetCards.Service.Services
 {
-    class PostService : Service<Post>, IPostService
+    public class PostService : Service<Post>, IPostService
     {
         public PostService(IUnitOfWork unitOfWork, IRepository<Post> repository) : base(unitOfWork, repository)
         {

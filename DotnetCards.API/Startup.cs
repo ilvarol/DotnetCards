@@ -1,19 +1,16 @@
+using DotnetCards.Service.Services;
+using DotnetCards.Core.Repositories;
+using DotnetCards.Core.Services;
 using DotnetCards.Core.UnitOfWorks;
 using DotnetCards.Data;
+using DotnetCards.Data.Repositories;
 using DotnetCards.Data.UnitofWorks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DotnetCards.API
 {
@@ -26,7 +23,6 @@ namespace DotnetCards.API
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(options =>
@@ -36,12 +32,15 @@ namespace DotnetCards.API
                 });
             });
 
-            services.AddScoped<IUnitOfWork, UnitOfWorks>();
-
             services.AddControllers();
+
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IService<>), typeof(Service<>));
+            services.AddScoped<IUnitOfWork, UnitOfWorks>();
+            services.AddScoped<IPostService, PostService>();
+            services.AddScoped<IPostDetailService, PostDetailService>();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

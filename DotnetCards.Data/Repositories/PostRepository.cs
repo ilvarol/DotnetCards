@@ -9,7 +9,7 @@ namespace DotnetCards.Data.Repositories
     {
         private AppDbContext AppDbContext { get => _context as AppDbContext; }
 
-        public PostRepository(DbContext context) : base(context)
+        public PostRepository(AppDbContext context) : base(context)
         {
         }
 

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace dotnetcards.service.Services
+namespace DotnetCards.Service.Services
 {
     public class Service<TEntity> : IService<TEntity> where TEntity : class
     {
