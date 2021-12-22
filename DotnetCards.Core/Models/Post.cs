@@ -9,8 +9,7 @@ namespace DotnetCards.Core.Models
         public int Id { get; set; }
         public string Title { get; set; }
         public DateTime Date { get; set; }
-        public bool IsDeleted { get; set; }
-        public int? ParentPostID { get; set; }
+        public int? ParentPostId { get; set; }
 
         public virtual Post Parent { get; set; }
         public virtual ICollection<Post> Children { get; set; }

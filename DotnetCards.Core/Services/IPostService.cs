@@ -6,6 +6,6 @@ namespace DotnetCards.Core.Services
 {
     public interface IPostService : IService<Post>
     {
-        Task<Post> GetWithNavigationPropertiesByIdAsync(int postId);
+        Task<Post> GetWithDetailsByIdAsync(int postId);
     }
 }

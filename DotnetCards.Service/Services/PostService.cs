@@ -12,9 +12,9 @@ namespace DotnetCards.Service.Services
         {
         }
 
-        public async Task<Post> GetWithNavigationPropertiesByIdAsync(int postId)
+        public async Task<Post> GetWithDetailsByIdAsync(int postId)
         {
-            return await _unitOfWork.Posts.GetWithNavigationPropertiesByIdAsync(postId);
+            return await _unitOfWork.Posts.GetWithDetailsByIdAsync(postId);
         }
     }
 }

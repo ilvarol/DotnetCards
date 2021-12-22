@@ -15,8 +15,8 @@ namespace DotnetCards.Data.Seeds
         public void Configure(EntityTypeBuilder<Post> builder)
         {
             builder.HasData(
-                new Post { Id = _ids[0], Title = "Post1", Date = DateTime.Now, IsDeleted = false, ParentPostID = null },
-                new Post { Id = _ids[1], Title = "Post2", Date = DateTime.Now, IsDeleted = false, ParentPostID = null }
+                new Post { Id = _ids[0], Title = "Post1", Date = DateTime.Now, ParentPostId = null },
+                new Post { Id = _ids[1], Title = "Post2", Date = DateTime.Now, ParentPostId = null }
             );
         }
     }

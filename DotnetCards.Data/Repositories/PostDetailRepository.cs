@@ -19,7 +19,9 @@ namespace DotnetCards.Data.Repositories
 
         public async Task<PostDetail> GetWithPostByIdAsync(int postDetailId)
         {
-            return await AppDbContext.PostDetails.Include(x => x.Post).SingleOrDefaultAsync(x => x.Id == postDetailId);
+            return await AppDbContext.PostDetails
+                .Include(x => x.Post)
+                .SingleOrDefaultAsync(x => x.Id == postDetailId);
         }
     }
 }

@@ -5,6 +5,6 @@ namespace DotnetCards.Core.Repositories
 {
 	public interface IPostRepository : IRepository<Post>
 	{
-		Task<Post> GetWithNavigationPropertiesByIdAsync(int postId);
+		Task<Post> GetWithDetailsByIdAsync(int postId);
 	}
 }

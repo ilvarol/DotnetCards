@@ -18,7 +18,7 @@ namespace DotnetCards.Data.Configurations
 
             builder.HasOne(x => x.Post)
                 .WithMany(b => b.PostDetails)
-                .HasForeignKey(b => b.PostID);
+                .HasForeignKey(b => b.PostId);
 
             builder.ToTable("PostDetails");
         }
